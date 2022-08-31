@@ -13,6 +13,7 @@ export default function Project() {
       name: "Doctor Information system",
       technology: ["Laravel", "HTML", "MYSQL", "CSS", "git","Bootstrap4","XAMPP"],
       imageUrl: doctor,
+      gitlink:"https://github.com/yaklesh0007/CP"
     },
     {
       id: 2,
@@ -28,12 +29,14 @@ export default function Project() {
         "roomdb",
       ],
       imageUrl: blog,
+      gitlink:"https://github.com/yaklesh0007/blogportalfrontend"
     },
     {
       id: 3,
       name: "Nepsitter",
       technology: ["MongoDB", "NodeJs", "Express", "ReactJs", "Heroku", "git"],
       imageUrl: nepsitter,
+      gitlink:"https://github.com/yaklesh0007/Agile_NepSitter_Front-end"
     },
     {
       id: 4,
@@ -46,6 +49,7 @@ export default function Project() {
         "react-bootstrap",
       ],
       imageUrl: portfolio,
+      gitlink:"https://github.com/yaklesh0007/portfolio"
     },
   ];
   return (
@@ -65,7 +69,7 @@ export default function Project() {
                   {item.technology.join(", ")}
                 </Card.Text>
               </Card.Body>
-              <Card.Footer><a href="#" className="btn btn-success">View source Code</a></Card.Footer>
+              <Card.Footer><a href={item.gitlink} className="btn btn-success">View source Code</a></Card.Footer>
               </Card>
               </div>
             )
