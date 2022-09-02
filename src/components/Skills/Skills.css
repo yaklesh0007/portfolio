@@ -1,0 +1,41 @@
+.skillspage{
+    align-content: center;
+    text-align: center;
+    
+    background-color: rgb(233, 238, 228);
+}
+.skillsheading{
+    margin-top: 40px;
+    color: rgb(26, 23, 228);
+   font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.skillsh3{
+    font-size: medium;
+}
+.pgb{
+    height: 30px;
+}
+.left{
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-bottom: 10vh;
+    margin-right: 5vh;
+}
+.skillicon{
+    margin-top: 15px;
+    /* background-color:white ;
+    border-radius:50%; */
+    align-content: center;
+}
+.brushicon{
+    color:rgb(1, 1, 41); 
+    
+}
+.txth2{
+    font-size: small;
+    color: gray;
+}
+.txtrow{
+    text-align: start;
+}
