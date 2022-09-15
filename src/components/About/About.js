@@ -25,7 +25,7 @@ export default function About() {
                 </Card.Text>
                 {
                   Data.map((info)=> 
-                    <Card.Text key={info.id} id="showtext">{info.name} console.log({info.name})</Card.Text>
+                    <Card.Text key={info.id} id="showtext">{info.name}</Card.Text>
                     
                   )
                 }
