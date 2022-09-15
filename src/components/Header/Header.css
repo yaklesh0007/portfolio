@@ -20,10 +20,7 @@
 #basic-navbar-nav{
     color: aliceblue;
 }
-/* .brand img{
-width: auto;
-height: 60px;
-} */
+
 
 /* nav ul li{
     padding: 0 12px;
@@ -35,6 +32,11 @@ nav ul li:hover{
     color: aqua;
     border-radius: 50px;
 }  */
+
+.brand img{
+    height: 50px;
+    width: 50px;
+}
 
 .links{
     
@@ -52,4 +54,15 @@ nav ul li:hover{
     border-radius: 50px;
     font-weight: bold;
     text-decoration-line: underline;
+}
+.imgcircle img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.imgcircle{
+    align-items: center;
+}
+.flex-box{
+    display: flex;
 }

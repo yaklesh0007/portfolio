@@ -46,7 +46,7 @@
 #showtext{
     font-size: 30px;
     animation-duration: 4s;
-    background: -webkit-linear-gradient(rgb(32, 2, 138), rgb(5, 150, 82));
+    background: -webkit-linear-gradient(rgb(138, 2, 2), rgb(7, 153, 190));
     font-weight: bolder;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -55,14 +55,21 @@
   animation-iteration-count: infinite;
 }
 
-@keyframes slidein {
+/* @keyframes slidein {
     from {
       margin-left:100%;
       width: 100%;
     }
-  
-    to {
+    
+
       margin-left: 0%;
       width: 100%;
+    }
+  } */
+
+  @media only screen and (max-width: 450px) {
+    .myimage img{
+        height: 300px;
+        width:300px;
     }
   }

@@ -1,12 +1,12 @@
 import { Box, Container } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import mypic from "../../images/mypic.jpg";
 import "./About.css";
 
 export default function About() {
-  const [Data,setData]=useState([{'name':'FullStack development'},{'name':'Web Development'},{'name':'Database Design and development'},{'name':'Mobile Application'}])
+  const Data =[{'id': '1' ,'name':'FullStack development'},{'id': '2' ,'name':'Web Development'},{'id': '3' ,'name':'Database Design and development'},{'id': '4' ,'name':'Mobile Application'}]
   return (
     <div className="about">
       <Container>
@@ -16,7 +16,7 @@ export default function About() {
               <img src={mypic} alt="aklesh yadav" />
             </Box>
           </div>
-          <div className="col-md-6 col-sm-6">
+          <div className="col-md-6 col-sm-12" >
             <Card className="text-center">
               
                 <Card.Title className="">Hi, I'm <span id="firstname">Aklesh</span><span id="lastname">yadav</span>.</Card.Title>
@@ -24,8 +24,9 @@ export default function About() {
                       Profund to <span id="api">API development </span> as well as <span id="web">web development </span>                
                 </Card.Text>
                 {
-                  Data.map(info=>
-                    <Card.Text id="showtext">{info.name}</Card.Text>
+                  Data.map((info)=> 
+                    <Card.Text key={info.id} id="showtext">{info.name} console.log({info.name})</Card.Text>
+                    
                   )
                 }
                 
